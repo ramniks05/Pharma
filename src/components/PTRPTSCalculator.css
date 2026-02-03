@@ -1,0 +1,329 @@
+.calculator-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f0f9fc 0%, #ffffff 100%);
+}
+
+.calculator-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.calculator-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.calculator-subtitle {
+  font-size: 1.125rem;
+  color: var(--text-muted);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.calculator-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (min-width: 968px) {
+  .calculator-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.calculator-form-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.calculator-form__row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .calculator-form__row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.calculator-form__group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.calculator-form__label {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.required {
+  color: var(--accent);
+}
+
+.calculator-form__input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.calculator-form__currency {
+  position: absolute;
+  left: 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  z-index: 1;
+}
+
+.calculator-form__suffix {
+  position: absolute;
+  right: 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  z-index: 1;
+}
+
+.calculator-form__input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  font-size: 1rem;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background: var(--white);
+  box-sizing: border-box;
+  min-height: 48px; /* Fixed min-height for alignment */
+}
+
+/* Inputs with currency symbol - add left padding */
+.calculator-form__currency + .calculator-form__input {
+  padding-left: 2.5rem;
+}
+
+/* Inputs with percentage suffix - add right padding */
+.calculator-form__input-wrapper:has(.calculator-form__suffix) .calculator-form__input {
+  padding-right: 2.5rem;
+}
+
+/* For inputs that have both currency and suffix */
+.calculator-form__input-wrapper:has(.calculator-form__currency):has(.calculator-form__suffix) .calculator-form__input {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.calculator-form__input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(25, 188, 219, 0.1);
+}
+
+/* Select dropdown - ensure consistent styling and alignment */
+select.calculator-form__input {
+  padding: 0.875rem 1rem;
+  padding-right: 2.5rem;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%235a5a7a' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  min-height: 48px; /* Match other inputs */
+}
+
+.calculator-form__actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn--large {
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+}
+
+.calculator-results {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.calculator-results__header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.calculator-results__header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.calculator-results__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.result-card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  background: var(--bg-light);
+}
+
+.result-card--primary {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: var(--white);
+}
+
+.result-card--accent {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+  color: var(--white);
+}
+
+.result-card__label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+.result-card__value {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.result-card__desc {
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
+
+.calculator-results__breakdown {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--border);
+}
+
+.calculator-results__breakdown h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.breakdown-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.breakdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.875rem 1rem;
+  background: var(--bg-light);
+  border-radius: 8px;
+}
+
+.breakdown-item__label {
+  font-size: 0.9375rem;
+  color: var(--text);
+}
+
+.breakdown-item__value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.calculator-contact-form {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--border);
+}
+
+.calculator-contact-form h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.calculator-contact-form__desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.calculator-contact-form__row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .calculator-contact-form__row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.calculator-contact-form__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.calculator-contact-form__input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  font-size: 0.9375rem;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.calculator-contact-form__input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(25, 188, 219, 0.1);
+}
+
+@media (max-width: 767px) {
+  .calculator-title {
+    font-size: 2rem;
+  }
+
+  .calculator-subtitle {
+    font-size: 1rem;
+  }
+
+  .calculator-form-card,
+  .calculator-results {
+    padding: 1.5rem;
+  }
+
+  .result-card__value {
+    font-size: 1.5rem;
+  }
+}

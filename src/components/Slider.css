@@ -1,0 +1,151 @@
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: var(--text);
+}
+
+.slider__track {
+  display: flex;
+  transition: transform 0.4s ease-out;
+}
+
+.slider__slide {
+  flex: 0 0 100%;
+  position: relative;
+  min-height: 280px;
+}
+
+.slider__image-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 520px;
+  background: var(--bg-light);
+}
+
+.slider__image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  display: block;
+}
+
+.slider__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 0 1.5rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  pointer-events: none;
+}
+
+.slider__overlay .slider__content {
+  pointer-events: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.slider__cta {
+  flex-shrink: 0;
+}
+
+.btn--white-outline {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.btn--white-outline:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--white);
+  border-color: var(--white);
+}
+
+/* Arrows */
+.slider__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--text);
+  font-size: 1.5rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.slider__arrow:hover {
+  background: var(--white);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.slider__arrow--prev {
+  left: 1rem;
+}
+
+.slider__arrow--next {
+  right: 1rem;
+}
+
+/* Dots */
+.slider__dots {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 2;
+}
+
+.slider__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--white);
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.slider__dot:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.slider__dot--active {
+  background: var(--white);
+}
+
+@media (min-width: 768px) {
+  .slider__slide {
+    min-height: 360px;
+  }
+  .slider__image-wrap {
+    max-height: 480px;
+  }
+  .slider__overlay {
+    padding: 1.5rem 0 2rem;
+  }
+  .slider__arrow {
+    width: 56px;
+    height: 56px;
+    font-size: 1.75rem;
+  }
+  .slider__arrow--prev {
+    left: 1.5rem;
+  }
+  .slider__arrow--next {
+    right: 1.5rem;
+  }
+}
