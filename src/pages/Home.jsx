@@ -139,7 +139,7 @@ export default function Home() {
               <div className="founder-profile__legacy">
                 <div className="founder-profile__legacy-icon">❤️</div>
                 <p>
-                  <strong>Legacy of Birendra Singh Rathore:</strong> BSR Pharma is built on the cherished 
+                  <strong>Legacy of Late. Shri Birendra Singh Rathore:</strong> BSR Pharma is built on the cherished 
                   vision of making quality healthcare affordable for everyone.
                 </p>
               </div>

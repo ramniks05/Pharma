@@ -425,3 +425,84 @@
   background: var(--white);
   color: var(--primary);
 }
+
+@media (max-width: 767px) {
+  /* Reduce section padding */
+  .rnd-hero {
+    padding: 3rem 0 2rem;
+  }
+  
+  .rnd-intro,
+  .rnd-facilities,
+  .rnd-process,
+  .rnd-focus,
+  .rnd-quality,
+  .rnd-cta {
+    padding: 2.5rem 0;
+  }
+  
+  /* Center all content */
+  .rnd-hero__content,
+  .rnd-intro__content,
+  .rnd-cta__content {
+    text-align: center;
+  }
+  
+  /* Fix text breaking */
+  .rnd-hero__title,
+  .rnd-intro__content h2,
+  .facility-card__content h3,
+  .process-step__content h3,
+  .focus-card h3,
+  .quality-banner__content h2,
+  .rnd-cta__content h2 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+  
+  /* Reduce gaps */
+  .rnd-intro-grid {
+    gap: 2rem;
+  }
+  
+  .facilities-grid {
+    gap: 1.5rem;
+  }
+  
+  .process-timeline {
+    gap: 1.5rem;
+  }
+  
+  .focus-grid {
+    gap: 1.5rem;
+  }
+  
+  /* Center cards */
+  .facility-card,
+  .focus-card {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  .process-step {
+    gap: 1.5rem;
+  }
+  
+  .process-step__content {
+    padding: 1.25rem 1.5rem;
+  }
+  
+  .quality-banner {
+    padding: 2rem 1.5rem;
+  }
+  
+  .rnd-cta__actions {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .rnd-cta__actions .btn {
+    width: 100%;
+  }
+}

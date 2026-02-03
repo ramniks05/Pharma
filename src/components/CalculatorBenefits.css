@@ -83,11 +83,30 @@
 }
 
 @media (max-width: 767px) {
+  .calculator-benefits {
+    padding: 2.5rem 0;
+  }
+  
+  .calculator-benefits__header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
   .calculator-benefits__title {
-    font-size: 2rem;
+    font-size: 1.75rem;
+    word-wrap: break-word;
+  }
+  
+  .calculator-benefits__subtitle {
+    font-size: 0.9375rem;
+  }
+  
+  .calculator-benefits__grid {
+    gap: 1.5rem;
   }
 
   .benefit-card {
     padding: 1.5rem;
+    text-align: center;
   }
 }

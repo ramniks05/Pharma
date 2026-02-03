@@ -60,11 +60,25 @@
 }
 
 @media (max-width: 767px) {
+  .calculator-disclaimer {
+    padding: 2.5rem 0;
+  }
+  
   .disclaimer-card {
     padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .disclaimer-card__content {
+    text-align: left;
   }
 
   .disclaimer-card__title {
     font-size: 1.25rem;
+    word-wrap: break-word;
+  }
+  
+  .disclaimer-list {
+    margin-left: 1rem;
   }
 }

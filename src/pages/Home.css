@@ -1039,6 +1039,50 @@
 }
 
 @media (max-width: 767px) {
+  /* Reduce section padding on mobile */
+  .welcome-section,
+  .therapeutic-section,
+  .stats-section,
+  .founder-section,
+  .commitment-section,
+  .products-cta-section,
+  .calculator-cta-section,
+  .lifecycle-section {
+    padding: 2.5rem 0;
+  }
+  
+  /* Center all content on mobile */
+  .welcome-content,
+  .therapeutic-grid,
+  .stats-content,
+  .founder-grid,
+  .commitment-grid,
+  .products-cta,
+  .calculator-cta,
+  .lifecycle {
+    text-align: center;
+  }
+  
+  /* Fix text breaking */
+  .welcome-title,
+  .therapeutic-card__title,
+  .stats-title,
+  .founder-title,
+  .commitment-title,
+  .section__title {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+  
+  /* Reduce gaps */
+  .welcome-features,
+  .therapeutic-grid,
+  .stats-grid,
+  .founder-values {
+    gap: 1rem;
+  }
+  
   .calculator-cta__title {
     font-size: 2rem;
   }
@@ -1049,6 +1093,20 @@
 
   .calculator-cta__text {
     font-size: 1rem;
+  }
+  
+  /* Center cards and content */
+  .therapeutic-card,
+  .stat-card,
+  .founder-profile__card,
+  .commitment-box {
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  /* Fix product CTA padding */
+  .products-cta {
+    padding: 2rem 1.5rem;
   }
 }
 
@@ -1292,4 +1350,132 @@
 @media (min-width: 768px) {
   .contact-grid { grid-template-columns: 1fr 1.2fr; }
   .contact-map { min-height: 320px; }
+}
+
+/* Mobile Optimizations - Reduce gaps and center content */
+@media (max-width: 767px) {
+  /* Reduce section padding */
+  .welcome-section {
+    padding: 2.5rem 0;
+  }
+  
+  .therapeutic-section {
+    padding: 2.5rem 0;
+  }
+  
+  .stats-section {
+    padding: 2.5rem 0;
+  }
+  
+  .founder-section {
+    padding: 2.5rem 0;
+  }
+  
+  .commitment-section {
+    padding: 2.5rem 0;
+  }
+  
+  .products-cta-section {
+    padding: 2.5rem 0;
+  }
+  
+  .calculator-cta-section {
+    padding: 2.5rem 0;
+  }
+  
+  .lifecycle-section {
+    padding: 2.5rem 0;
+  }
+  
+  /* Center all content */
+  .welcome-content,
+  .therapeutic-grid,
+  .stats-content,
+  .founder-grid,
+  .commitment-grid,
+  .products-cta,
+  .calculator-cta,
+  .lifecycle {
+    text-align: center;
+  }
+  
+  .founder-content {
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .commitment-content {
+    text-align: center;
+  }
+  
+  /* Fix text breaking */
+  .welcome-title,
+  .therapeutic-card__title,
+  .stats-title,
+  .founder-title,
+  .commitment-title,
+  .section__title,
+  .products-cta__title,
+  .calculator-cta__title {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    max-width: 100%;
+  }
+  
+  /* Reduce gaps between elements */
+  .welcome-features {
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .therapeutic-grid {
+    gap: 1.25rem;
+  }
+  
+  .stats-grid {
+    gap: 1.25rem;
+  }
+  
+  .founder-values {
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .lifecycle {
+    gap: 2rem;
+  }
+  
+  .lifecycle__steps {
+    gap: 1.25rem;
+  }
+  
+  /* Center cards */
+  .therapeutic-card,
+  .stat-card,
+  .founder-profile,
+  .commitment-box {
+    margin: 0 auto;
+  }
+  
+  /* Fix product CTA padding */
+  .products-cta {
+    padding: 2rem 1.5rem;
+  }
+  
+  /* Fix founder grid */
+  .founder-grid {
+    gap: 2rem;
+  }
+  
+  .commitment-grid {
+    gap: 2rem;
+  }
+  
+  /* Ensure images don't break */
+  .founder-profile__image img,
+  .lifecycle__image {
+    max-width: 100%;
+    height: auto;
+  }
 }

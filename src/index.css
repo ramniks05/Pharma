@@ -54,12 +54,29 @@ ul, ol {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 0 1rem;
 }
 
 @media (min-width: 768px) {
   .container {
     padding: 0 1.5rem;
+  }
+}
+
+/* Mobile-specific fixes */
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+  
+  * {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
 

@@ -399,6 +399,69 @@
   font-weight: 700;
 }
 
+@media (max-width: 767px) {
+  /* Reduce section padding on mobile */
+  .about-hero {
+    padding: 3rem 0 2rem;
+  }
+  
+  .about-content,
+  .about-values,
+  .about-rnd,
+  .about-leadership,
+  .about-founder {
+    padding: 2.5rem 0;
+  }
+  
+  /* Center all content */
+  .about-intro,
+  .about-description,
+  .inspiration-content,
+  .founder-tribute {
+    text-align: center;
+  }
+  
+  .founder-tribute__content {
+    text-align: center;
+  }
+  
+  .founder-tribute__text {
+    text-align: left;
+    padding: 1.5rem;
+  }
+  
+  /* Fix text breaking */
+  .about-hero__title,
+  .section__title,
+  .founder-tribute__name {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+  
+  /* Reduce gaps */
+  .mission-vision-grid,
+  .values-grid,
+  .leadership-grid {
+    gap: 1.5rem;
+  }
+  
+  .founder-tribute {
+    gap: 2rem;
+  }
+  
+  .founder-tribute__image img {
+    width: 240px;
+    height: 240px;
+  }
+  
+  /* Center leader cards */
+  .leader-card {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+
 @media (min-width: 768px) {
   .founder-tribute {
     grid-template-columns: 300px 1fr;

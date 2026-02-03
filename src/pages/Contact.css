@@ -412,3 +412,62 @@
   border-radius: 8px;
   min-width: 160px;
 }
+
+@media (max-width: 767px) {
+  /* Reduce section padding */
+  .contact-hero {
+    padding: 3rem 0 2rem;
+  }
+  
+  .contact-cards,
+  .contact-map-section,
+  .contact-social-section,
+  .contact-cta {
+    padding: 2.5rem 0;
+  }
+  
+  /* Center all content */
+  .contact-hero__content,
+  .contact-card,
+  .contact-map-header,
+  .contact-social-content,
+  .contact-cta__content {
+    text-align: center;
+  }
+  
+  /* Fix text breaking */
+  .contact-hero__title,
+  .contact-card__title,
+  .contact-map-header h2,
+  .contact-social__title,
+  .contact-cta__title {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+  
+  /* Reduce gaps */
+  .contact-cards-grid {
+    gap: 1.25rem;
+  }
+  
+  .contact-hero__badges {
+    gap: 1rem;
+  }
+  
+  .contact-social-links {
+    gap: 1rem;
+  }
+  
+  /* Fix map height */
+  .contact-map,
+  .contact-map iframe {
+    min-height: 300px;
+  }
+  
+  /* Center cards */
+  .contact-card {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}

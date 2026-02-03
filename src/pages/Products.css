@@ -134,3 +134,39 @@
     gap: 1.75rem;
   }
 }
+
+@media (max-width: 767px) {
+  .products-page-hero {
+    padding: 2rem 0 1.5rem;
+  }
+  
+  .products-page-grid {
+    padding: 2rem 0;
+  }
+  
+  .products-page-hero__title {
+    font-size: 1.75rem;
+    word-wrap: break-word;
+  }
+  
+  .products-page-hero__subtitle {
+    font-size: 0.9375rem;
+  }
+  
+  .products-grid {
+    gap: 1.25rem;
+  }
+  
+  .product-card {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  .product-card__title {
+    word-wrap: break-word;
+  }
+  
+  .products-empty {
+    padding: 2rem 1rem;
+  }
+}

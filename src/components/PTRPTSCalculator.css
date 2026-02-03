@@ -310,20 +310,44 @@ select.calculator-form__input {
 }
 
 @media (max-width: 767px) {
+  .calculator-section {
+    padding: 2.5rem 0;
+  }
+  
+  .calculator-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
   .calculator-title {
-    font-size: 2rem;
+    font-size: 1.75rem;
+    word-wrap: break-word;
   }
 
   .calculator-subtitle {
-    font-size: 1rem;
+    font-size: 0.9375rem;
+    max-width: 100%;
   }
 
   .calculator-form-card,
   .calculator-results {
     padding: 1.5rem;
   }
+  
+  .calculator-form__row {
+    gap: 1rem;
+  }
 
   .result-card__value {
     font-size: 1.5rem;
+  }
+  
+  .calculator-results__grid {
+    gap: 0.75rem;
+  }
+  
+  .breakdown-item {
+    padding: 0.75rem;
+    font-size: 0.875rem;
   }
 }

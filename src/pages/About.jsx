@@ -160,14 +160,14 @@ export default function About() {
           <h2 className="section__title">Founder's Inspiration</h2>
           <div className="founder-tribute">
             <div className="founder-tribute__image">
-              <img src="/assets/founder.png" alt="Birendra Singh Rathore - Founder" />
+              <img src="/assets/founder.png" alt="Late. Shri Birendra Singh Rathore - Founder" />
             </div>
             <div className="founder-tribute__content">
-              <h3 className="founder-tribute__name">Mr. Birendra Singh Rathore</h3>
+              <h3 className="founder-tribute__name">Late. Shri Birendra Singh Rathore</h3>
               <p className="founder-tribute__role">Founder</p>
               <div className="founder-tribute__text">
                 <p>
-                  BSR Pharma Private Limited (Pvt. Ltd.) is built on the cherished vision of <strong>Mr. Birendra Singh Rathore</strong>, 
+                  BSR Pharma Private Limited (Pvt. Ltd.) is built on the cherished vision of <strong>Late. Shri Birendra Singh Rathore</strong>, 
                   a man who deeply believed that quality healthcare should be affordable for everyone. His heartfelt desire was to 
                   ensure that no one would be deprived of essential medicines due to high costs.
                 </p>
@@ -176,7 +176,7 @@ export default function About() {
                   <strong> Mr. Arjun Singh</strong> established this company as a tribute to his father.
                 </p>
                 <p>
-                  The name <strong>BSR</strong> proudly represents <strong>Birendra Singh Rathore</strong>, honoring his legacy, 
+                  The name <strong>BSR</strong> proudly represents <strong>Late. Shri Birendra Singh Rathore</strong>, honoring his legacy, 
                   his strength and his compassion for society.
                 </p>
                 <p>

@@ -218,16 +218,51 @@
 }
 
 @media (max-width: 767px) {
+  /* Reduce section padding */
+  .pcd-hero {
+    padding: 3rem 0 2.5rem;
+  }
+  
+  .pcd-features,
+  .pcd-process {
+    padding: 2.5rem 0;
+  }
+  
+  /* Center all content */
+  .pcd-hero__content,
+  .pcd-features__header,
+  .pcd-process__header {
+    text-align: center;
+  }
+  
   .pcd-hero__title {
-    font-size: 2rem;
+    font-size: 1.75rem;
+    word-wrap: break-word;
   }
 
   .pcd-hero__subtitle {
-    font-size: 1rem;
+    font-size: 0.9375rem;
   }
 
   .pcd-features__title,
   .pcd-process__title {
-    font-size: 2rem;
+    font-size: 1.75rem;
+    word-wrap: break-word;
+  }
+  
+  /* Reduce gaps */
+  .pcd-features__grid {
+    gap: 1.5rem;
+  }
+  
+  .pcd-process__steps {
+    gap: 1.5rem;
+  }
+  
+  /* Center cards */
+  .pcd-feature-card,
+  .pcd-process__step {
+    margin: 0 auto;
+    max-width: 100%;
   }
 }
