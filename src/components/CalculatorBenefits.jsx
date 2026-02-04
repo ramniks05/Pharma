@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './CalculatorBenefits.css'
 
 export default function CalculatorBenefits() {
@@ -34,6 +35,9 @@ export default function CalculatorBenefits() {
             <h3 className="benefit-card__title">Decision Support for Franchise</h3>
             <p className="benefit-card__desc">
               Make informed decisions about franchise and distribution partnerships with accurate pricing insights.
+            </p>
+            <p className="benefit-card__terms">
+              <Link to="/terms" className="benefit-card__terms-link">View Terms & Conditions →</Link>
             </p>
           </div>
 

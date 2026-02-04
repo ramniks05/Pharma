@@ -18,6 +18,9 @@ export default function PCD() {
               Join BSR Pharma as a PCD franchise partner and build a successful pharmaceutical distribution business 
               with exclusive territory rights, comprehensive product range, and dedicated support.
             </p>
+            <p className="pcd-hero__terms-note">
+              Please refer to our <Link to="/terms" className="pcd-hero__terms-link">Terms & Conditions</Link> for franchise business policies and requirements.
+            </p>
             <div className="pcd-hero__actions">
               <button
                 type="button"
@@ -40,6 +43,9 @@ export default function PCD() {
             <h2 className="pcd-features__title">Our Core Values</h2>
             <p className="pcd-features__subtitle">
               What makes BSR Pharma Private Limited a trusted partner for PCD franchise and distribution.
+            </p>
+            <p className="pcd-features__terms-note">
+              For detailed business terms and policies, please see our <Link to="/terms" className="pcd-features__terms-link">Terms & Conditions</Link>.
             </p>
           </div>
 
@@ -77,6 +83,9 @@ export default function PCD() {
             <h2 className="pcd-features__title">What We Provide to Our PCD Franchise Business Partners</h2>
             <p className="pcd-features__subtitle">
               Strong business support, legal documentation, promotional tools, and incentives to help you grow.
+            </p>
+            <p className="pcd-features__terms-note">
+              All franchise partnerships are subject to our <Link to="/terms" className="pcd-features__terms-link">Terms & Conditions</Link>. Please review before applying.
             </p>
           </div>
 
@@ -137,6 +146,9 @@ export default function PCD() {
             >
               Get PCD Distributorship
             </button>
+            <p className="pcd-process__terms-note">
+              Please review our <Link to="/terms" className="pcd-process__terms-link">Terms & Conditions</Link> before applying
+            </p>
           </div>
         </div>
       </section>
@@ -274,6 +286,9 @@ export default function PCD() {
               <p className="pcd-process__step-desc">
                 Complete the franchise agreement and receive all promotional materials and product information.
               </p>
+              <p className="pcd-process__step-terms">
+                <Link to="/terms" className="pcd-process__step-terms-link">Review Terms & Conditions →</Link>
+              </p>
             </div>
 
             <div className="pcd-process__step">
@@ -293,6 +308,9 @@ export default function PCD() {
             >
               Apply for PCD Franchise
             </button>
+            <p className="pcd-process__terms-note">
+              By applying, you agree to our <Link to="/terms" className="pcd-process__terms-link">Terms & Conditions</Link>
+            </p>
           </div>
         </div>
       </section>

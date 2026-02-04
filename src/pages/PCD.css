@@ -227,6 +227,78 @@
   text-align: center;
 }
 
+/* Terms & Conditions Links Styling */
+.pcd-hero__terms-note {
+  margin-top: 1.5rem;
+  font-size: 0.9375rem;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.pcd-hero__terms-link {
+  color: var(--white);
+  text-decoration: underline;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.pcd-hero__terms-link:hover {
+  opacity: 0.8;
+}
+
+.pcd-features__terms-note {
+  margin-top: 1rem;
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.pcd-features__terms-link {
+  color: var(--primary);
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.pcd-features__terms-link:hover {
+  color: var(--primary-dark);
+}
+
+.pcd-process__terms-note {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.pcd-process__terms-link {
+  color: var(--primary);
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.pcd-process__terms-link:hover {
+  color: var(--primary-dark);
+}
+
+.pcd-process__step-terms {
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+.pcd-process__step-terms-link {
+  font-size: 0.875rem;
+  color: var(--primary);
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.pcd-process__step-terms-link:hover {
+  color: var(--primary-dark);
+}
+
 @media (max-width: 767px) {
   /* Reduce section padding */
   .pcd-hero {
@@ -276,5 +348,17 @@
   .pcd-process__step {
     margin: 0 auto;
     max-width: 100%;
+  }
+
+  /* Terms links mobile */
+  .pcd-hero__terms-note,
+  .pcd-features__terms-note,
+  .pcd-process__terms-note {
+    font-size: 0.875rem;
+    word-wrap: break-word;
+  }
+
+  .pcd-process__step-terms-link {
+    font-size: 0.8125rem;
   }
 }

@@ -82,6 +82,23 @@
   line-height: 1.6;
 }
 
+.benefit-card__terms {
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+.benefit-card__terms-link {
+  font-size: 0.875rem;
+  color: var(--primary);
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.benefit-card__terms-link:hover {
+  color: var(--primary-dark);
+}
+
 @media (max-width: 767px) {
   .calculator-benefits {
     padding: 2.5rem 0;

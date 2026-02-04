@@ -87,6 +87,9 @@ export default function PCDEnquiryModal({ onClose }) {
           <div className="enquiry-modal__info">
             <span className="enquiry-modal__info-icon">ℹ</span>
             <p>Fill the form and we'll redirect you to WhatsApp with your enquiry ready to send.</p>
+            <p style={{ marginTop: '0.5rem', fontSize: '0.875rem' }}>
+              Please review our <a href="/terms" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)', textDecoration: 'underline' }}>Terms & Conditions</a> for franchise policies.
+            </p>
           </div>
           <form className="enquiry-form" onSubmit={handleSubmit}>
             <div className="enquiry-form__group">
