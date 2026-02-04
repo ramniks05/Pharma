@@ -37,7 +37,10 @@ export default function Footer() {
               <li><Link to="/products" className="footer__link">Products</Link></li>
               <li><Link to="/about" className="footer__link">About Us</Link></li>
               <li><Link to="/rnd" className="footer__link">R&D</Link></li>
+              <li><Link to="/pcd" className="footer__link">PCD Franchise</Link></li>
+              <li><Link to="/calculator" className="footer__link">PTR & PTS Calculator</Link></li>
               <li><Link to="/contact" className="footer__link">Contact Us</Link></li>
+              <li><Link to="/terms" className="footer__link">Terms & Conditions</Link></li>
             </ul>
           </div>
           <div className="footer__links">

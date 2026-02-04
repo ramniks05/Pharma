@@ -142,7 +142,9 @@ export default function About() {
               </p>
             </div>
             <div className="leader-card">
-              <div className="leader-card__avatar">NS</div>
+              <div className="leader-card__image">
+                <img src="/assets/advocate.png" alt="Advocate Narendra Singh - Legal Adviser" />
+              </div>
               <h3>Advocate Narendra Singh</h3>
               <p className="leader-card__role">Legal Adviser</p>
               <p className="leader-card__bio">
@@ -157,7 +159,7 @@ export default function About() {
 
       <section className="about-founder">
         <div className="container">
-          <h2 className="section__title">Founder's Inspiration</h2>
+            <h2 className="section__title">Founder's Inspiration</h2>
           <div className="founder-tribute">
             <div className="founder-tribute__image">
               <img src="/assets/founder.png" alt="Late. Shri Birendra Singh Rathore - Founder" />
@@ -166,23 +168,23 @@ export default function About() {
               <h3 className="founder-tribute__name">Late. Shri Birendra Singh Rathore</h3>
               <p className="founder-tribute__role">Founder</p>
               <div className="founder-tribute__text">
-                <p>
+              <p>
                   BSR Pharma Private Limited (Pvt. Ltd.) is built on the cherished vision of <strong>Late. Shri Birendra Singh Rathore</strong>, 
                   a man who deeply believed that quality healthcare should be affordable for everyone. His heartfelt desire was to 
-                  ensure that no one would be deprived of essential medicines due to high costs.
-                </p>
-                <p>
-                  Although he is no longer with us today, his ideals and values continue to guide us. Inspired by his noble mission, 
-                  <strong> Mr. Arjun Singh</strong> established this company as a tribute to his father.
-                </p>
-                <p>
+                ensure that no one would be deprived of essential medicines due to high costs.
+              </p>
+              <p>
+                Although he is no longer with us today, his ideals and values continue to guide us. Inspired by his noble mission, 
+                <strong> Mr. Arjun Singh</strong> established this company as a tribute to his father.
+              </p>
+              <p>
                   The name <strong>BSR</strong> proudly represents <strong>Late. Shri Birendra Singh Rathore</strong>, honoring his legacy, 
                   his strength and his compassion for society.
                 </p>
                 <p>
                   <strong>Arjun Singh</strong> is committed to fulfilling his father's dream by taking <strong>BSR Pharma</strong> to new heights - 
                   delivering safe, affordable, and reliable medicines to people across the nation.
-                </p>
+              </p>
               </div>
             </div>
           </div>

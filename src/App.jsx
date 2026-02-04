@@ -10,6 +10,7 @@ import RnD from './pages/RnD'
 import Contact from './pages/Contact'
 import Calculator from './pages/Calculator'
 import PCD from './pages/PCD'
+import Terms from './pages/Terms'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/calculator" element={<Calculator />} />
           <Route path="/pcd" element={<PCD />} />
+          <Route path="/terms" element={<Terms />} />
         </Routes>
       </Layout>
     </>
