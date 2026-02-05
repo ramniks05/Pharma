@@ -56,11 +56,21 @@ export default function HeroSlider({ slides }) {
             <div className="hero-slider__track" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
               {slides.map((slide, index) => (
                 <div key={index} className="hero-slider__slide">
-                  <img
-                    src={slide.image}
-                    alt={slide.alt}
-                    className="hero-slider__image"
-                  />
+                  {slide.productId ? (
+                    <Link to={`/product/${slide.productId}`} className="hero-slider__slide-link">
+                      <img
+                        src={slide.image}
+                        alt={slide.alt}
+                        className="hero-slider__image"
+                      />
+                    </Link>
+                  ) : (
+                    <img
+                      src={slide.image}
+                      alt={slide.alt}
+                      className="hero-slider__image"
+                    />
+                  )}
                 </div>
               ))}
             </div>
