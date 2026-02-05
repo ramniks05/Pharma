@@ -241,9 +241,17 @@
     padding: 2rem 0;
   }
 
+  .hero-slider__container {
+    justify-items: center;
+    align-items: center;
+  }
+
   .hero-slider__text {
     text-align: center;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .hero-slider__description {
@@ -267,10 +275,22 @@
   .hero-slider__images {
     order: -1;
     border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 100%;
   }
 
   .hero-slider__slide {
     aspect-ratio: 16 / 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-slider__image {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero-slider__arrow {

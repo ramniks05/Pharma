@@ -470,4 +470,15 @@
     margin: 0 auto;
     max-width: 100%;
   }
+  
+  .contact-map-section .container,
+  .contact-social-section .container,
+  .contact-cta .container {
+    text-align: center;
+  }
+  
+  .contact-map {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

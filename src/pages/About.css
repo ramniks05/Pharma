@@ -450,15 +450,37 @@
     gap: 2rem;
   }
   
+  .founder-tribute__image {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
   .founder-tribute__image img {
     width: 240px;
     height: 240px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   /* Center leader cards */
   .leader-card {
     margin: 0 auto;
     max-width: 100%;
+    text-align: center;
+  }
+  
+  .about-hero__content,
+  .mission-vision-grid,
+  .values-grid,
+  .inspiration-content {
+    text-align: center;
+  }
+  
+  .values-grid .value-item,
+  .mission-vision-grid > * {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
