@@ -546,6 +546,6 @@ export const company = {
     facebook: 'https://facebook.com/bsrpharma',
     twitter: 'https://twitter.com/bsrpharma',
     linkedin: 'https://linkedin.com/company/bsrpharma',
-    instagram: 'https://instagram.com/bsrpharma',
+    instagram: 'https://www.instagram.com/bsr_pharma?utm_source=qr&igsh=MWYzem92c2Zhazlpbg==',
   },
 }

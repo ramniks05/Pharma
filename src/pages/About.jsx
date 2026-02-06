@@ -141,18 +141,6 @@ export default function About() {
                 She brings dedication, creativity, and managerial strength to the organization.
               </p>
             </div>
-            <div className="leader-card">
-              <div className="leader-card__image">
-                <img src="/assets/advocate.png" alt="Advocate Narendra Singh - Legal Adviser" />
-              </div>
-              <h3>Advocate Narendra Singh</h3>
-              <p className="leader-card__role">Legal Adviser</p>
-              <p className="leader-card__bio">
-                Advocate Narendra Singh serves as the company's Legal Adviser, ensuring that all operations, agreements, 
-                policies, and practices comply with legal and regulatory standards. With strong expertise in corporate and 
-                pharmaceutical laws, he safeguards the company's interests and maintains transparency in all legal matters.
-              </p>
-            </div>
           </div>
         </div>
       </section>
